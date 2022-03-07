@@ -1,0 +1,43 @@
+
+<form id="formulir">
+    <table align="center" cellpadding="5">
+        <thead>
+            <tr bgcolor="grey">
+                <th colspan="2">Kalkulatorku</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Angka 1</td>
+                <td>
+                    <input type="text" name="a1" onfocus="angka1()" value="Angka 1"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Angka 2</td>
+                <td>
+                    <input type="text" name="a2" onfocus="angka2()" value="Angka 2"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Hasil</td>
+                <td>
+                    <input type="text" name="hasil" value="" disabled/>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr bgcolor="grey">
+                <th colspan="2">
+                    <input type="button" name="jumlah" onclick="hitung(this.name)" value="+"/>
+                    <input type="button" name="kurang" onclick="hitung(this.name)" value="-"/>
+                    <input type="button" name="kali" onclick="hitung(this.name)" value="X"/>
+                    <input type="button" name="bagi" onclick="hitung(this.name)" value="/"/>
+                    <input type="button" name="pangkat" onclick="hitung(this.name)" value="^"/>
+                    <input type="button" name="batal" onclick="kosongAll()" value="Batal"/>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</form>
+<script src="kalkulator.js"></script>

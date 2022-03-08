@@ -1,0 +1,55 @@
+<h1>Data Gempa Bumi</h1>
+<div class="divv">
+    <style>
+    .divv {
+        text-align: justify;
+        border: 3px outset rgb(201, 97, 97);
+        background-color: rgb(197, 235, 248);
+        width: 100%;
+        }
+    </style>
+<script>
+    //-----------membuat class---------
+    class Gempa{
+        //member1 & 2 : variabel dan konstruktor
+        constructor(lokasi, skala){
+            this.lokasi = lokasi;
+            this.skala = skala;
+        }
+        dampak(){
+            let skl = this.skala;
+            let dampak;
+            if (skl > 0 && skl <= 2) dampak = "Tidak Terasa"
+            else if (skl > 2 && skl <= 4)dampak = "Bangunan retak-retak"
+            else if (skl > 4 && skl <= 6) dampak = "Bangunan Roboh"
+            else if (skl > 6) dampak = "Bangunan Roboh dan Berpotensi Tsunami"
+
+            document.write(`Lokasi Gempa : ${this.lokasi}<br/>
+            Skala : ${this.skala}<br/>
+            Dampak : ${dampak}<hr/>`)}
+        }
+
+        let gp1= new Gempa('Seram, Indonesia', 2.3);
+        let gp2= new Gempa('Flores Region, Indonesia', 3.9);
+        let gp3= new Gempa('Minahassa Peninsula, Sulawesi', 3.8 );
+        let gp4= new Gempa('Flores Region, Indonesia', 4.6);
+        let gp5= new Gempa('Off West Coast of Northern Sumatra', 5.0);
+        let gp6= new Gempa('barat daya Aceh Jaya', 5.9);
+        let gp7= new Gempa('Timur Laut Pasaman Barat-Sumbar', 6.2);
+        let gp8= new Gempa('Timur Laut Maluku Barat Daya', 6.2);
+        let gp9= new Gempa('Barat Daya Meulaboh-Aceh Barat', 5.3);
+        let gp10= new Gempa('Timur Laut Ruteng-Manggarai-NTT', 5.0);
+        //cetak
+        gp1.dampak();
+        gp2.dampak();
+        gp3.dampak();
+        gp4.dampak();
+        gp5.dampak();
+        gp6.dampak();
+        gp7.dampak();
+        gp8.dampak();
+        gp9.dampak();
+        gp10.dampak();
+
+</script>
+</div>

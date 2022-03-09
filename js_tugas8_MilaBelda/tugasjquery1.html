@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery - Event</title>
+        <h1 align="center">Gambar dan Suara Hewan</h1>
+        <script src="js/jquery.js"></script>
+        <script>
+            $("document").ready(function () {
+                $("div.kambing").click(function () {
+                    $(this).css({
+                        background: "url('images/kambing.jpg')"
+                    });
+                });
+                $("div.kambing").click(function(){
+                $("<audio></audio>").attr({ 
+                        'src':'audio/kambing.mp3', 
+                        'volume':0.4,
+                        'autoplay':'autoplay',
+	                    }).appendTo("body");
+                });
+
+                $("div.anjing").click(function () {
+                    $(this).css({
+                        background: "url('images/anjing.jpg')"
+                    });
+                });
+                $("div.anjing").click(function(){
+                $("<audio></audio>").attr({ 
+                        'src':'audio/anjing.mp3', 
+                        'volume':0.4,
+                        'autoplay':'autoplay',
+	                    }).appendTo("body");
+                });
+                $("div.bebek").click(function () {
+                    $(this).css({
+                        background: "url('images/bebek.jpg')"
+                    });
+                });
+                $("div.bebek").click(function(){
+                $("<audio></audio>").attr({ 
+                        'src':'audio/bebek.mp3', 
+                        'volume':0.4,
+                        'autoplay':'autoplay',
+	                    }).appendTo("body");
+                });
+                $("div.ayam").click(function () {
+                    $(this).css({
+                        background: "url('images/ayam.jpg')"
+                    });
+                });
+                $("div.ayam").click(function(){
+                $("<audio></audio>").attr({ 
+                        'src':'audio/ayam.mp3', 
+                        'volume':0.4,
+                        'autoplay':'autoplay',
+	                    }).appendTo("body");
+                });
+            });
+
+        </script>
+        <style type="text/css">
+            div {
+                background: #D9E4EC;
+                width: 200px;
+                height: 150px;
+                float: left;
+                margin: 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body bgcolor="#6AABD2">
+        <p>Klik pada setiap kotak untuk menampilkan hewan</p>
+        <div class="kambing">Kambing</div>
+        <div class="anjing">Anjing</div>
+        <div class="bebek">Bebek</div>
+        <div class="ayam">Ayam</div>
+    </body>
+</html>

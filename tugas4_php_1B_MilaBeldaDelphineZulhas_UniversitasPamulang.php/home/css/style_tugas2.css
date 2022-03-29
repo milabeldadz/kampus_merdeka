@@ -1,0 +1,128 @@
+:root{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(20, 94, 75);
+    font-size: 12pt;
+    line-height: 0.5cm;
+}
+h1{
+    color: coral;
+    line-height: 1cm;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+fieldset, legend{
+    background-color: rgb(19, 89, 107);
+    color: white;
+    border: 2px solid rgb(131, 199, 184);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 20px;
+    padding: 5px;
+}
+body{
+    margin: 0.5cm 1cm;
+    background-color: rgb(183, 255, 193);
+}
+hr{
+    border: 1px solid maroon;
+}
+h4{
+    text-align: center;
+}
+
+div#menu{
+    text-align: right;
+}
+
+/*--------------pseudo class------------*/
+a:link, a:active, a:visited{
+    text-decoration: none;
+    color: rgb(19, 114, 82);
+    font-size: 14pt;
+    border: 2px ridge rgba(17, 106, 148, 0.966);
+    background-color: rgb(218, 255, 132);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(87, 19, 114);
+    font-size: 16pt;
+    border: 2px ridge rgba(102, 148, 17, 0.966);
+    background-color: rgb(255, 237, 132);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(98, 180, 228);
+}
+/*-------------pseudo element------------*/
+
+.p1::first-letter{
+    font-size: 24pt;
+    color: yellow;
+    font-family: 'Segoe UI';
+    float: left;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+p.p1::first-line {
+    font-style: italic;
+    background-color: lightgreen;
+    color: goldenrod;
+}
+.abcd{
+    font-weight: bolder;
+    color: palevioletred;
+    font-family: 'Times New Roman';
+    font-size: 14pt;
+}
+.al{
+    font-size: 12pt;
+    font-weight: bold;
+    color: lemonchiffon;
+    font-family: sans-serif;
+    font-style: oblique;
+
+}
+
+.hobi{
+    list-style-image: url('../icon/star.jpg');
+}
+.menonton{
+    list-style-image: url('../icon/nyanyi.gif');
+}
+.menu{
+    list-style-image: url('../icon/good.png');
+}
+.makanan, .minuman{
+    list-style-image: url('../icon/heart.png');
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+#customers td, #customers th {
+    border: 3px groove rgb(243, 245, 141);
+    padding: 10px;
+}
+#customers th {
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #0439aa;
+    color: white;
+}
+#customers tr:nth-child(even){
+    background-color: #a8d8ff;
+}
+#customers tr:nth-child(odd){
+    background-color: #ffaed6;
+}
+#customers tr:hover {
+    background-color: rgb(254, 255, 168);
+}
